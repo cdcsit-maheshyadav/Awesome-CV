@@ -25,5 +25,5 @@ jobs:
       uses: w9jds/firebase-action@master
       with:
         appId: ${{secrets.FIREBASE_APP_ID}}
-        token: ${{secrets.FIREBASE_TOKEN}}
+        FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
         file: examples/*.pdf
