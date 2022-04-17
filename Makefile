@@ -15,8 +15,5 @@ resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
-coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
-
 clean:
 	rm -rf $(EXAMPLES_DIR)/*.pdf
