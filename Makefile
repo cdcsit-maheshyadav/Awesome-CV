@@ -18,7 +18,7 @@ cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
 coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 	
-coverletter0.pdf: $(EXAMPLES_DIR)/coverletter.tex
+coverletter0.pdf: $(EXAMPLES_DIR)/coverletter0.tex
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 clean:
