@@ -28,7 +28,9 @@ jobs:
         name: examples
         path: examples/*.pdf
         
-    - name: Deploy to Firebase
-      uses: w9jds/firebase-action@master
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: ${{ github.ref == 'refs/heads/main' }}
       with:
-        FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
