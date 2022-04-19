@@ -32,7 +32,7 @@ jobs:
         git config --local user.name "cdcsit-maheshyadav"
         git commit -m 'PDF Deploy'
     - name: Force push to destination branch 'gh-pages'
-      uses: ad-m/github-push-action@v0.5.0
+      uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
