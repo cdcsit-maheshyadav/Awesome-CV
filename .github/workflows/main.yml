@@ -30,8 +30,8 @@ jobs:
         git config --global --add safe.directory /github/workspace
         git config --local user.email "contact@maheshyadav.com.np"
         git config --local user.name "cdcsit-maheshyadav"
-        git commit -m 'PDF Deploy'
-    - name: Force push to destination branch 'gh-pages'
+        git commit -m 'PDF Deploy on `date +'%Y-%m-%d %H:%M:%S'`'
+    - name: Force push to branch 'gh-pages'
       uses: ad-m/github-push-action@v0.5.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
